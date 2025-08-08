@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Animación fade-in para secciones
   const sections = document.querySelectorAll("section");
   sections.forEach((section, index) => {
     section.style.opacity = 0;
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, index * 400);
   });
 
-  // Animación para imágenes en la galería
   const imgs = document.querySelectorAll(".gallery .image-grid img");
   imgs.forEach((img, index) => {
     img.style.opacity = 0;

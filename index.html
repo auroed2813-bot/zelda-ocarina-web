@@ -7,28 +7,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header con título -->
   <header>
     <h1>The Legend of Zelda: Ocarina of Time</h1>
   </header>
 
-  <!-- Navegación simple -->
   <nav>
     <ul>
       <li><a href="#personajes">Personajes</a></li>
       <li><a href="#galeria">Galería</a></li>
+      <li><a href="#video">Video</a></li>
       <li><a href="#musica">Música</a></li>
     </ul>
   </nav>
 
-  <!-- Sección de personajes -->
   <section id="personajes">
     <h2>Personajes destacados</h2>
     <p>Link, Zelda, Ganondorf y más protagonistas del juego.</p>
     <img src="images/link_zelda_ganon_wallpaper.jpg" alt="Link, Zelda y Ganondorf" />
   </section>
 
-  <!-- Galería con tus imágenes -->
   <section id="galeria" class="gallery">
     <h2>Galería Épica</h2>
     <div class="image-grid">
@@ -38,16 +35,22 @@
     </div>
   </section>
 
-  <!-- Sección música con audio embebido -->
+  <section id="video">
+    <h2>Video de Juego</h2>
+    <video controls width="720" preload="metadata" poster="images/link_vs_ganondorf1.jpg">
+      <source src="https://archive.org/download/zelda-ocarina-of-time-gameplay/zelda-ocarina-of-time-gameplay.mp4" type="video/mp4" />
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  </section>
+
   <section id="musica">
     <h2>Música del Juego</h2>
-    <audio controls>
+    <audio controls preload="auto">
       <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
       Tu navegador no soporta audio.
     </audio>
   </section>
 
-  <!-- Footer simple -->
   <footer>
     <p>Creado por [Tu Nombre] - Proyecto Zelda Ocarina of Time</p>
   </footer>
