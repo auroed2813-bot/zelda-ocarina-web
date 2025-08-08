@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zelda: Ocarina of Time</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/rmsxozot/105%20-%20Title%20Theme.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#personajes">Personajes</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#enlaces">Enlaces</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay">
+    <header id="inicio">
+      <h1>The Legend of Zelda: Ocarina of Time</h1>
+    </header>
+
+    <section class="content fade-in">
+      <p>
+        Bienvenido al mundo de Hyrule. Acompaña a Link en su viaje para salvar a la princesa Zelda y derrotar al malvado Ganondorf usando la poderosa Ocarina del Tiempo.
+      </p>
+      <button onclick="mostrarMensaje()">¡Toca la Ocarina!</button>
+      <p id="mensaje"></p>
+    </section>
+
+    <section id="personajes" class="personajes fade-in">
+      <h2>Personajes Principales</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://www.zeldadungeon.net/wiki/images/1/14/OoT_Link_Artwork.png" alt="Link" />
+          <h3>Link</h3>
+          <p>El héroe silencioso destinado a salvar Hyrule.</p>
+        </div>
+        <div class="card">
+          <img src="https://www.zeldadungeon.net/wiki/images/3/3d/OoT_Zelda_Artwork.png" alt="Zelda" />
+          <h3>Zelda</h3>
+          <p>La princesa sabia que guía a Link en su aventura.</p>
+        </div>
+        <div class="card">
+          <img src="https://www.zeldadungeon.net/wiki/images/2/23/OoT_Ganondorf_Artwork.png" alt="Ganondorf" />
+          <h3>Ganondorf</h3>
+          <p>El poderoso rey Gerudo que desea conquistar Hyrule.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria fade-in">
+      <h2>Galería de Imágenes</h2>
+      <div class="imagenes">
+        <img src="https://wallpapers.com/images/hd/zelda-ocarina-of-time-3d-forest-temple-aesthetic-0dxmjw5n4c7a6h5z.jpg" alt="Bosque Kokiri" />
+        <img src="https://images2.alphacoders.com/944/944178.jpg" alt="Templo del Tiempo" />
+        <img src="https://images3.alphacoders.com/106/1064302.jpg" alt="Link en combate" />
+      </div>
+    </section>
+
+    <section id="enlaces" class="enlaces fade-in">
+      <h2>Más sobre Zelda</h2>
+      <ul>
+        <li><a href="https://zelda.nintendo.com/" target="_blank">Sitio oficial de Zelda</a></li>
+        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank">Zelda Wiki - Ocarina of Time</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">Wikipedia</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

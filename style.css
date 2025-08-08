@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://wallpapers.com/images/hd/ocarina-of-time-temple-of-time-9o0k5rzk0o00pxxd.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Georgia', serif;
+  color: #fff;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: #00ffcc;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.content, .personajes, .galeria, .enlaces {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: #00cc99;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #009977;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.galeria .imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.enlaces ul {
+  list-style: none;
+  padding: 0;
+}
+
+.enlaces li {
+  margin: 10px 0;
+}
+
+.enlaces a {
+  color: #00ccff;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+/* Animaciones */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#mensaje {
+  font-size: 1.2em;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#mensaje.visible {
+  opacity: 1;
+}
