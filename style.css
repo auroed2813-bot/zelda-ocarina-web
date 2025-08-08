@@ -1,3 +1,4 @@
+/* Fuente y colores base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #e0f2ff;
@@ -6,6 +7,7 @@ body {
   color: #222;
 }
 
+/* Encabezado */
 header {
   background-color: #0d2c54;
   color: #ffe600;
@@ -36,23 +38,27 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Contenido principal */
 main {
   padding: 2rem 10%;
   background: #fff;
 }
 
+/* Encabezados */
 h2 {
   color: #004d00;
   border-bottom: 2px solid #004d00;
   padding-bottom: 0.3rem;
 }
 
+/* Imágenes generales */
 img {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
+/* Tarjetas de contenido */
 .cards {
   display: flex;
   gap: 1rem;
@@ -73,11 +79,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.places-list {
-  list-style-type: square;
-  margin-left: 1rem;
-}
-
+/* Galería de imágenes */
 .image-grid {
   display: flex;
   gap: 1rem;
@@ -91,18 +93,11 @@ img {
   border-radius: 8px;
 }
 
+/* Contenedor de video */
 .video-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-}
-
-footer {
-  background-color: #0d2c54;
-  color: #ffe600;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
 }
 
 /* Sección Lugares con imágenes alternadas */
@@ -134,6 +129,7 @@ footer {
   width: 55%;
 }
 
+/* Sección de enlaces */
 .enlaces ul {
   list-style: none;
   padding: 0;
@@ -149,7 +145,7 @@ footer {
   font-size: 1.1em;
 }
 
-/* Animaciones fade-in */
+/* Animaciones al hacer scroll */
 .section-fade {
   opacity: 0;
   transform: translateY(20px);
@@ -159,4 +155,51 @@ footer {
 .section-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Pie de página */
+footer {
+  background-color: #0d2c54;
+  color: #ffe600;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Música */
+audio {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lugar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lugar img,
+  .lugar div {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+  }
 }
