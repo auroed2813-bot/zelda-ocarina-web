@@ -1,17 +1,25 @@
-// Efecto de aparición con scroll
-const secciones = document.querySelectorAll(".section-fade");
+document.addEventListener("DOMContentLoaded", () => {
+  // Animar las secciones al hacer scroll
+  const sections = document.querySelectorAll(".section-fade");
 
-const mostrarSeccion = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
+  function checkSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < triggerBottom) {
+        section.classList.add("visible");
+      }
+    });
+  }
+
+  checkSections();
+  window.addEventListener("scroll", checkSections);
+
+  // Añadir efecto hover para imágenes (opcional, ejemplo simple)
+  const galleryImages = document.querySelectorAll(".gallery .image-grid img");
+  galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+      alert(`¡Has seleccionado la imagen: "${img.alt}"!`);
+    });
   });
-};
-
-const observer = new IntersectionObserver(mostrarSeccion, {
-  threshold: 0.1,
 });
-
-secciones.forEach(seccion => observer.observe(seccion));
