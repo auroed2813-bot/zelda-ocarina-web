@@ -134,6 +134,19 @@ footer {
   width: 55%;
 }
 
+
+/* Animaciones fade-in */
+.section-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .enlaces ul {
   list-style: none;
   padding: 0;
@@ -147,16 +160,4 @@ footer {
   color: #00ccff;
   text-decoration: underline;
   font-size: 1.1em;
-}
-
-/* Animaciones fade-in */
-.section-fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.section-fade.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
