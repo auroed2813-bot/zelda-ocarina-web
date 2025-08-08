@@ -122,19 +122,31 @@ section img {
 }
 
 /* Lista de Lugares */
-.places-list {
-  list-style: disc inside;
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1em;
-  color: #ddd;
-  text-align: left;
+.lugar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 20px;
 }
 
-.places-list li {
-  margin: 12px 0;
+.lugar img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
 }
 
+.lugar .izquierda {
+    order: 0;
+}
+
+.lugar .derecha {
+    order: 1;
+}
+
+.lugar div {
+    width: 55%;
+}
 /* Galería */
 .gallery .image-grid {
   display: grid;
