@@ -2,77 +2,55 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zelda: Ocarina of Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Legend of Zelda: Ocarina of Time</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/rmsxozot/105%20-%20Title%20Theme.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio.
-  </audio>
+  <!-- Header con título -->
+  <header>
+    <h1>The Legend of Zelda: Ocarina of Time</h1>
+  </header>
 
+  <!-- Navegación simple -->
   <nav>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
       <li><a href="#personajes">Personajes</a></li>
       <li><a href="#galeria">Galería</a></li>
-      <li><a href="#enlaces">Enlaces</a></li>
+      <li><a href="#musica">Música</a></li>
     </ul>
   </nav>
 
-  <div class="overlay">
-    <header id="inicio">
-      <h1>The Legend of Zelda: Ocarina of Time</h1>
-    </header>
+  <!-- Sección de personajes -->
+  <section id="personajes">
+    <h2>Personajes destacados</h2>
+    <p>Link, Zelda, Ganondorf y más protagonistas del juego.</p>
+    <img src="images/link_zelda_ganon_wallpaper.jpg" alt="Link, Zelda y Ganondorf" />
+  </section>
 
-    <section class="content fade-in">
-      <p>
-        Bienvenido al mundo de Hyrule. Acompaña a Link en su viaje para salvar a la princesa Zelda y derrotar al malvado Ganondorf usando la poderosa Ocarina del Tiempo.
-      </p>
-      <button onclick="mostrarMensaje()">¡Toca la Ocarina!</button>
-      <p id="mensaje"></p>
-    </section>
+  <!-- Galería con tus imágenes -->
+  <section id="galeria" class="gallery">
+    <h2>Galería Épica</h2>
+    <div class="image-grid">
+      <img src="images/link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
+      <img src="images/link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
+      <img src="images/link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
+    </div>
+  </section>
 
-    <section id="personajes" class="personajes fade-in">
-      <h2>Personajes Principales</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="https://www.zeldadungeon.net/wiki/images/1/14/OoT_Link_Artwork.png" alt="Link" />
-          <h3>Link</h3>
-          <p>El héroe silencioso destinado a salvar Hyrule.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.zeldadungeon.net/wiki/images/3/3d/OoT_Zelda_Artwork.png" alt="Zelda" />
-          <h3>Zelda</h3>
-          <p>La princesa sabia que guía a Link en su aventura.</p>
-        </div>
-        <div class="card">
-          <img src="https://www.zeldadungeon.net/wiki/images/2/23/OoT_Ganondorf_Artwork.png" alt="Ganondorf" />
-          <h3>Ganondorf</h3>
-          <p>El poderoso rey Gerudo que desea conquistar Hyrule.</p>
-        </div>
-      </div>
-    </section>
+  <!-- Sección música con audio embebido -->
+  <section id="musica">
+    <h2>Música del Juego</h2>
+    <audio controls>
+      <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio.
+    </audio>
+  </section>
 
-    <section id="galeria" class="galeria fade-in">
-      <h2>Galería de Imágenes</h2>
-      <div class="imagenes">
-        <img src="https://wallpapers.com/images/hd/zelda-ocarina-of-time-3d-forest-temple-aesthetic-0dxmjw5n4c7a6h5z.jpg" alt="Bosque Kokiri" />
-        <img src="https://images2.alphacoders.com/944/944178.jpg" alt="Templo del Tiempo" />
-        <img src="https://images3.alphacoders.com/106/1064302.jpg" alt="Link en combate" />
-      </div>
-    </section>
-
-    <section id="enlaces" class="enlaces fade-in">
-      <h2>Más sobre Zelda</h2>
-      <ul>
-        <li><a href="https://zelda.nintendo.com/" target="_blank">Sitio oficial de Zelda</a></li>
-        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank">Zelda Wiki - Ocarina of Time</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">Wikipedia</a></li>
-      </ul>
-    </section>
-  </div>
+  <!-- Footer simple -->
+  <footer>
+    <p>Creado por [Tu Nombre] - Proyecto Zelda Ocarina of Time</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

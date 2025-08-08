@@ -1,35 +1,23 @@
-function mostrarMensaje() {
-  const frases = [
-    "¡Hyaaa!",
-    "¡Vamos a salvar Hyrule!",
-    "Escucha el llamado de la ocarina...",
-    "¡Navi dice: Hey! Listen!",
-    "Has desbloqueado una melodía secreta.",
-    "¡Tú eres el héroe del tiempo!"
-  ];
-
-  const mensaje = frases[Math.floor(Math.random() * frases.length)];
-  const mensajeElemento = document.getElementById("mensaje");
-  mensajeElemento.textContent = mensaje;
-
-  mensajeElemento.classList.remove("visible");
-  void mensajeElemento.offsetWidth;
-  mensajeElemento.classList.add("visible");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  const elementosAnimados = document.querySelectorAll(".fade-in");
+  // Animación fade-in para secciones
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section, index) => {
+    section.style.opacity = 0;
+    section.style.transform = "translateY(20px)";
+    setTimeout(() => {
+      section.style.transition = "all 1s ease";
+      section.style.opacity = 1;
+      section.style.transform = "translateY(0)";
+    }, index * 400);
+  });
 
-  const observer = new IntersectionObserver((entradas) => {
-    entradas.forEach(entrada => {
-      if (entrada.isIntersecting) {
-        entrada.target.classList.add("visible");
-        observer.unobserve(entrada.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  elementosAnimados.forEach(elemento => {
-    observer.observe(elemento);
+  // Animación para imágenes en la galería
+  const imgs = document.querySelectorAll(".gallery .image-grid img");
+  imgs.forEach((img, index) => {
+    img.style.opacity = 0;
+    setTimeout(() => {
+      img.style.transition = "opacity 1s ease-in-out";
+      img.style.opacity = 1;
+    }, 1000 + index * 300);
   });
 });

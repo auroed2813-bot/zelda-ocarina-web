@@ -1,159 +1,89 @@
+/* Reset y básicos */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  background-image: url('https://wallpapers.com/images/hd/ocarina-of-time-temple-of-time-9o0k5rzk0o00pxxd.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Georgia', serif;
+  background-color: #101820;
   color: #fff;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
-  padding-bottom: 50px;
-}
-
-nav {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 header {
-  text-align: center;
-  padding: 40px 0;
-}
-
-h1 {
-  font-size: 3em;
-  color: #00ffcc;
-  text-shadow: 3px 3px 5px #000;
-}
-
-.content, .personajes, .galeria, .enlaces {
-  max-width: 1000px;
-  margin: auto;
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  margin-top: 30px;
-  text-align: center;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 1.1em;
-  background-color: #00cc99;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #009977;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #00743F;
   padding: 20px;
-  margin: 15px;
-  border-radius: 10px;
-  width: 250px;
   text-align: center;
+}
+
+nav {
+  background-color: #004d26;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #a4c639;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #d4e157;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+section img {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  margin-top: 20px;
+}
+
+.gallery .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery .image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.gallery .image-grid img:hover {
   transform: scale(1.05);
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.galeria .imagenes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.galeria img {
-  width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.galeria img:hover {
-  transform: scale(1.05);
-}
-
-.enlaces ul {
-  list-style: none;
-  padding: 0;
-}
-
-.enlaces li {
-  margin: 10px 0;
-}
-
-.enlaces a {
-  color: #00ccff;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-
-/* Animaciones */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#mensaje {
-  font-size: 1.2em;
+audio {
   margin-top: 20px;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+  width: 100%;
+  max-width: 400px;
 }
 
-#mensaje.visible {
-  opacity: 1;
+footer {
+  background-color: #004d26;
+  color: #a4c639;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
