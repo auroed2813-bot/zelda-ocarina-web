@@ -3,52 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Legend of Zelda: Ocarina of Time</title>
+  <title>The Legend of Zelda: Ocarina of Time - Universo Completo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>The Legend of Zelda: Ocarina of Time</h1>
+    <nav>
+      <ul id="menu">
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#mazmorras">Mazmorras</a></li>
+        <li><a href="#villanos">Villanos</a></li>
+        <li><a href="#lugares">Lugares</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#musica">Música</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#personajes">Personajes</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#musica">Música</a></li>
-    </ul>
-  </nav>
+  <main>
+    <section id="personajes" class="section-fade">
+      <h2>Personajes Principales</h2>
+      <p>Link, Zelda, Ganondorf y muchos más héroes y aliados.</p>
+      <img src="images/link_zelda_ganon_wallpaper.jpg" alt="Link, Zelda y Ganondorf" />
+    </section>
 
-  <section id="personajes">
-    <h2>Personajes destacados</h2>
-    <p>Link, Zelda, Ganondorf y más protagonistas del juego.</p>
-    <img src="images/link_zelda_ganon_wallpaper.jpg" alt="Link, Zelda y Ganondorf" />
-  </section>
+    <section id="mazmorras" class="section-fade">
+      <h2>Mazmorras</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/deku_tree.jpg" alt="Gran Árbol Deku" />
+          <h3>Gran Árbol Deku</h3>
+          <p>La primera mazmorra del juego, hogar de criaturas venenosas y trampas clásicas.</p>
+        </article>
+        <article class="card">
+          <img src="images/forest_temple.jpg" alt="Templo del Bosque" />
+          <h3>Templo del Bosque</h3>
+          <p>Un templo místico con acertijos de luz y sombra, custodiado por espíritus del bosque.</p>
+        </article>
+        <article class="card">
+          <img src="images/fire_temple.jpg" alt="Templo del Fuego" />
+          <h3>Templo del Fuego</h3>
+          <p>Una mazmorra infernal llena de lava y enemigos ardientes.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="galeria" class="gallery">
-    <h2>Galería Épica</h2>
-    <div class="image-grid">
-      <img src="images/link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
-      <img src="images/link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
-      <img src="images/link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
-    </div>
-  </section>
+    <section id="villanos" class="section-fade">
+      <h2>Villanos</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/ganondorf.jpg" alt="Ganondorf" />
+          <h3>Ganondorf</h3>
+          <p>El Rey de los Ladrones de Gerudo, principal antagonista que busca conquistar Hyrule.</p>
+        </article>
+        <article class="card">
+          <img src="images/wizzrobe.jpg" alt="Wizzrobe" />
+          <h3>Wizzrobe</h3>
+          <p>Mago oscuro que lanza rayos mágicos, enemigo recurrente en mazmorras.</p>
+        </article>
+        <article class="card">
+          <img src="images/twinrova.jpg" alt="Twinrova" />
+          <h3>Twinrova</h3>
+          <p>Hermana gemelas fusionadas que usan fuego y hielo para atacar.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="video">
-    <h2>Video de Juego</h2>
-    <div class="video-container">
-      <iframe width="720" height="405" src="https://www.youtube.com/embed/F9ohCKS_LUM" title="Video The Legend of Zelda Ocarina of Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </section>
+    <section id="lugares" class="section-fade">
+      <h2>Lugares Icónicos</h2>
+      <ul class="places-list">
+        <li><strong>Hyrule Field:</strong> El vasto campo que conecta todo Hyrule.</li>
+        <li><strong>Kakariko Village:</strong> Pueblo pacífico y base de operaciones de Link.</li>
+        <li><strong>Lon Lon Ranch:</strong> Rancho famoso por sus caballos y su leche especial.</li>
+        <li><strong>Lake Hylia:</strong> Gran lago donde Link puede pescar y encontrar secretos.</li>
+      </ul>
+    </section>
 
-  <section id="musica">
-    <h2>Música del Juego</h2>
-    <audio controls preload="auto">
-      <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
-      Tu navegador no soporta audio.
-    </audio>
-  </section>
+    <section id="galeria" class="section-fade gallery">
+      <h2>Galería Épica</h2>
+      <div class="image-grid">
+        <img src="images/link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
+        <img src="images/link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
+        <img src="images/link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
+      </div>
+    </section>
+
+    <section id="video" class="section-fade">
+      <h2>Video de Juego</h2>
+      <div class="video-container">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/F9ohCKS_LUM" title="Video The Legend of Zelda Ocarina of Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="musica" class="section-fade">
+      <h2>Música del Juego</h2>
+      <audio controls preload="auto">
+        <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio.
+      </audio>
+    </section>
+  </main>
 
   <footer>
     <p>Creado por [Tu Nombre] - Proyecto Zelda Ocarina of Time</p>

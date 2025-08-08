@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  sections.forEach((section, index) => {
-    section.style.opacity = 0;
-    section.style.transform = "translateY(20px)";
-    setTimeout(() => {
-      section.style.transition = "all 1s ease";
-      section.style.opacity = 1;
-      section.style.transform = "translateY(0)";
-    }, index * 400);
-  });
+  // Animar las secciones al hacer scroll
+  const sections = document.querySelectorAll(".section-fade");
 
-  const imgs = document.querySelectorAll(".gallery .image-grid img");
-  imgs.forEach((img, index) => {
-    img.style.opacity = 0;
-    setTimeout(() => {
-      img.style.transition = "opacity 1s ease-in-out";
-      img.style.opacity = 1;
-    }, 1000 + index * 300);
+  function checkSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < triggerBottom) {
+        section.classList.add("visible");
+      }
+    });
+  }
+
+  checkSections();
+  window.addEventListener("scroll", checkSections);
+
+  // Añadir efecto hover para imágenes (opcional, ejemplo simple)
+  const galleryImages = document.querySelectorAll(".gallery .image-grid img");
+  galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+      alert(`¡Has seleccionado la imagen: "${img.alt}"!`);
+    });
   });
 });
