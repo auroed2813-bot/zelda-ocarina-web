@@ -12,6 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function mostrarMensaje() {
+    const frases = [
+        "¡Hyaaa!",
+        "¡Vamos a salvar Hyrule!",
+        "Escucha el llamado de la ocarina...",
+        "¡Navi dice: Hey! Listen!",
+        "Has desbloqueado una melodía secreta.",
+        "¡Tú eres el héroe del tiempo!"
+    ];
+
+    const mensaje = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById("mensaje").textContent = mensaje;
+}
+
+
   checkSections();
   window.addEventListener("scroll", checkSections);
 

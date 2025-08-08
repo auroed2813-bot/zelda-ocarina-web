@@ -183,6 +183,22 @@ audio {
   box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
+
+.enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces li {
+    margin: 10px 0;
+}
+
+.enlaces a {
+    color: #00ccff;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
 /* Footer */
 footer {
   background-color: #004d26;
