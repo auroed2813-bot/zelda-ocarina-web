@@ -18,6 +18,7 @@
         <li><a href="#galeria">Galería</a></li>
         <li><a href="#video">Video</a></li>
         <li><a href="#musica">Música</a></li>
+        <li><a href="#comentarios">Comentarios</a></li>
       </ul>
     </nav>
   </header>
@@ -73,12 +74,38 @@
 
     <section id="lugares" class="section-fade">
       <h2>Lugares Icónicos</h2>
-      <ul class="places-list">
-        <li><strong>Hyrule Field:</strong> El vasto campo que conecta todo Hyrule.</li>
-        <li><strong>Kakariko Village:</strong> Pueblo pacífico y base de operaciones de Link.</li>
-        <li><strong>Lon Lon Ranch:</strong> Rancho famoso por sus caballos y su leche especial.</li>
-        <li><strong>Lake Hylia:</strong> Gran lago donde Link puede pescar y encontrar secretos.</li>
-      </ul>
+
+      <div class="lugar">
+        <img src="images/castillo_hyrule.jpg" alt="Castillo de Hyrule" class="izquierda" />
+        <div>
+          <h3>Castillo de Hyrule</h3>
+          <p>El centro del reino donde reside la princesa Zelda. Un lugar de gran importancia política y espiritual.</p>
+        </div>
+      </div>
+
+      <div class="lugar">
+        <div>
+          <h3>Lago Hylia</h3>
+          <p>Un lago sereno al suroeste de Hyrule, hogar del laboratorio de investigación y del Templo del Agua.</p>
+        </div>
+        <img src="images/lago_hylia.jpg" alt="Lago Hylia" class="derecha" />
+      </div>
+
+      <div class="lugar">
+        <img src="images/bosque_kokiri.jpg" alt="Bosque Kokiri" class="izquierda" />
+        <div>
+          <h3>Bosque Kokiri</h3>
+          <p>El hogar de la infancia de Link. Un lugar lleno de magia y misterio protegido por el Gran Árbol Deku.</p>
+        </div>
+      </div>
+
+      <div class="lugar">
+        <div>
+          <h3>Campo de Hyrule</h3>
+          <p>Extensos campos abiertos que conectan las distintas regiones del mundo. Lugar de encuentros y batallas.</p>
+        </div>
+        <img src="images/campo_hyrule.jpg" alt="Campo de Hyrule" class="derecha" />
+      </div>
     </section>
 
     <section id="galeria" class="section-fade gallery">
@@ -97,26 +124,33 @@
       </div>
     </section>
 
-    <section id="audio" class="section-fade">
-        <audio controls autoplay loop>
-        <source src="audio/musica.mp3" type="audio/mpeg">
-         Tu navegador no soporta audio.
-     </audio>
-     </section>
-
-<section id="enlaces" class="enlaces fade-in">
-      <h2>Más sobre Zelda</h2>
-      <ul>
-        <li><a href="https://zelda.nintendo.com/" target="_blank">Sitio oficial de Zelda</a></li>
-        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank">Zelda Wiki - Ocarina of Time</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">Wikipedia</a></li>
-      </ul>
+    <section id="musica" class="section-fade">
+      <h2>Música del Juego</h2>
+      <audio controls preload="auto">
+        <source src="audio/audio.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio.
+      </audio>
     </section>
-  </div>
 
+    <section id="comentarios" class="section-fade">
+      <h2>Comentarios de fans</h2>
+      <form action="guardar.php" method="POST">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" name="nombre" id="nombre" required /><br /><br />
+        <label for="comentario">Comentario:</label><br />
+        <textarea name="comentario" id="comentario" rows="4" required></textarea><br /><br />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <hr />
+
+      <h3>Comentarios recientes</h3>
+      <iframe src="ver.php" style="width:100%; height:300px; border:none;"></iframe>
+    </section>
+  </main>
 
   <footer>
-    <p>Creado por Aurora Siguenza Morales - Proyecto Zelda Ocarina of Time</p>
+    <p>Creado por Aurora A.siguenza Morales - Proyecto Zelda Ocarina of Time</p>
   </footer>
 
   <script src="script.js"></script>
