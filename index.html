@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -18,7 +17,6 @@
         <li><a href="#galeria">Galería</a></li>
         <li><a href="#video">Video</a></li>
         <li><a href="#musica">Música</a></li>
-        <li><a href="#comentarios">Comentarios</a></li>
       </ul>
     </nav>
   </header>
@@ -130,22 +128,6 @@
         <source src="audio/audio.mp3" type="audio/mpeg" />
         Tu navegador no soporta audio.
       </audio>
-    </section>
-
-    <section id="comentarios" class="section-fade">
-      <h2>Comentarios de fans</h2>
-      <form action="guardar.php" method="POST">
-        <label for="nombre">Nombre:</label><br />
-        <input type="text" name="nombre" id="nombre" required /><br /><br />
-        <label for="comentario">Comentario:</label><br />
-        <textarea name="comentario" id="comentario" rows="4" required></textarea><br /><br />
-        <button type="submit">Enviar</button>
-      </form>
-
-      <hr />
-
-      <h3>Comentarios recientes</h3>
-      <iframe src="ver.php" style="width:100%; height:300px; border:none;"></iframe>
     </section>
   </main>
 

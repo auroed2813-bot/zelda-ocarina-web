@@ -134,21 +134,6 @@ footer {
   width: 55%;
 }
 
-.enlaces ul {
-  list-style: none;
-  padding: 0;
-}
-
-.enlaces li {
-  margin: 10px 0;
-}
-
-.enlaces a {
-  color: #00ccff;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-
 /* Animaciones fade-in */
 .section-fade {
   opacity: 0;
@@ -159,33 +144,4 @@ footer {
 .section-fade.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Formulario Comentarios */
-form {
-  max-width: 600px;
-  margin-bottom: 20px;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  resize: vertical;
-}
-
-button {
-  background-color: #004d00;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #006600;
 }
