@@ -1,137 +1,213 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Legend of Zelda: Ocarina of Time</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Legend of Zelda: Ocarina of Time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>The Legend of Zelda: Ocarina of Time</h1>
-    <p>Explora Hyrule y vive la aventura épica de Link</p>
+    <div class="container header-container">
+      <h1 class="site-title">The Legend of Zelda: Ocarina of Time</h1>
+      <nav>
+        <ul id="menu" class="menu">
+          <li><a href="#descripcion">Descripción</a></li>
+          <li><a href="#personajes">Personajes</a></li>
+          <li><a href="#villanos">Villanos</a></li>
+          <li><a href="#lugares">Lugares</a></li>
+          <li><a href="#mazmorras">Mazmorras</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#musica">Música</a></li>
+          <li><button id="toggle-theme" aria-label="Cambiar modo oscuro">🌙</button></li>
+        </ul>
+        <button id="btn-menu" aria-label="Abrir menú">☰</button>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="video">
-      <h2>Video Destacado</h2>
-      <div class="video-container">
-        <iframe
-          width="720"
-          height="405"
-          src="https://www.youtube.com/embed/F9ohCKS_LUM"
-          title="Video The Legend of Zelda Ocarina of Time"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+    <section id="descripcion" class="section">
+      <h2>Descripción</h2>
+      <p>
+        The Legend of Zelda: Ocarina of Time es un juego de acción y aventura desarrollado por Nintendo para la consola Nintendo 64, lanzado en 1998. Sigue la historia de Link, un joven héroe que debe salvar el reino de Hyrule y derrotar al malvado Ganondorf.
+      </p>
+    </section>
+
+    <section id="personajes" class="section">
+      <h2>Personajes principales</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/Link.png" alt="Link" />
+          <h3>Link</h3>
+          <p class="card-desc">El protagonista, un joven héroe destinado a salvar Hyrule.</p>
+        </div>
+        <div class="card">
+          <img src="images/Zelda1.png" alt="Zelda" />
+          <h3>Princesa Zelda</h3>
+          <p class="card-desc">La princesa de Hyrule, sabia y valiente.</p>
+        </div>
+        <div class="card">
+          <img src="images/Navi.png" alt="Navi" />
+          <h3>Navi</h3>
+          <p class="card-desc">La hada guía que acompaña a Link en su aventura.</p>
+        </div>
       </div>
     </section>
 
-    <section id="villanos" class="section-fade">
-      <h2>Villanos y Enemigos</h2>
-      <div class="villanos-grid">
-        <article class="card">
-          <img src="images/ganondorf.jpg" alt="Ganondorf" />
+    <section id="villanos" class="section">
+      <h2>Villanos destacados</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/Ganondorf1.png" alt="Ganondorf" />
           <h3>Ganondorf</h3>
-          <p>El principal antagonista que busca controlar Hyrule.</p>
-        </article>
-        <article class="card">
-          <img src="images/dark_link.jpg" alt="Dark Link" />
-          <h3>Dark Link</h3>
-          <p>El reflejo oscuro de Link, una sombra peligrosa.</p>
-        </article>
-        <article class="card">
-          <img src="images/phantom_ganon.jpg" alt="Phantom Ganon" />
-          <h3>Phantom Ganon</h3>
-          <p>Un guerrero fantasmal que acecha en el Palacio de la Princesa.</p>
-        </article>
-        <article class="card">
-          <img src="images/volvagia.jpg" alt="Volvagia" />
-          <h3>Volvagia</h3>
-          <p>Un dragón de lava que habita en el Templo del Fuego.</p>
-        </article>
-        <article class="card">
-          <img src="images/bongo_bongo.jpg" alt="Bongo Bongo" />
-          <h3>Bongo Bongo</h3>
-          <p>El jefe del Templo Shadow, una bestia con manos espectrales.</p>
-        </article>
-        <article class="card">
-          <img src="images/twinrova.jpg" alt="Twinrova" />
+          <p class="card-desc">El principal antagonista, un poderoso hechicero que busca conquistar Hyrule.</p>
+        </div>
+        <div class="card">
+          <img src="images/Twinrova.png" alt="Twinrova" />
           <h3>Twinrova</h3>
-          <p>Hermanas gemelas fusionadas que usan fuego y hielo para atacar.</p>
-        </article>
+          <p class="card-desc">Las hermanas gemelas que combinan fuego y hielo para atacar.</p>
+        </div>
+        <div class="card">
+          <img src="images/BongoBongo.png" alt="Bongo Bongo" />
+          <h3>Bongo Bongo</h3>
+          <p class="card-desc">El jefe de la mazmorra del Templo Shadow, un enemigo sombra.</p>
+        </div>
+        <div class="card">
+          <img src="images/Volvagia.png" alt="Volvagia" />
+          <h3>Volvagia</h3>
+          <p class="card-desc">El dragón de lava que habita en la Mazmorra del Cráter de la Montaña de la Muerte.</p>
+        </div>
+        <div class="card">
+          <img src="images/Ganon.png" alt="Ganon" />
+          <h3>Ganon</h3>
+          <p class="card-desc">Forma bestial y final de Ganondorf.</p>
+        </div>
       </div>
     </section>
 
-    <section id="lugares" class="section-fade">
-      <h2>Lugares Icónicos</h2>
-
-      <div class="lugar">
-        <img src="images/castillo_hyrule.jpg" alt="Castillo de Hyrule" class="izquierda" />
-        <div>
-          <h3>Castillo de Hyrule</h3>
-          <p>El centro del reino donde reside la princesa Zelda. Un lugar de gran importancia política y espiritual.</p>
+    <section id="lugares" class="section">
+      <h2>Lugares importantes</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/HyruleMap.png" alt="Mapa de Hyrule" />
+          <h3>Hyrule</h3>
+          <p class="card-desc">El vasto reino donde se desarrolla la aventura de Link.</p>
         </div>
-      </div>
-
-      <div class="lugar">
-        <div>
-          <h3>Lago Hylia</h3>
-          <p>Un lago sereno al suroeste de Hyrule, hogar del laboratorio de investigación y del Templo del Agua.</p>
+        <div class="card">
+          <img src="images/KokiriVillage.png" alt="Pueblo Kokiri" />
+          <h3>Pueblo Kokiri</h3>
+          <p class="card-desc">El hogar de los niños Kokiri y donde Link comienza su aventura.</p>
         </div>
-        <img src="images/lago_hylia.jpg" alt="Lago Hylia" class="derecha" />
-      </div>
-
-      <div class="lugar">
-        <img src="images/bosque_kokiri.jpg" alt="Bosque Kokiri" class="izquierda" />
-        <div>
-          <h3>Bosque Kokiri</h3>
-          <p>El hogar de la infancia de Link. Un lugar lleno de magia y misterio protegido por el Gran Árbol Deku.</p>
+        <div class="card">
+          <img src="images/LostWoodsMap.png" alt="Bosque Perdido" />
+          <h3>Bosque Perdido</h3>
+          <p class="card-desc">Un bosque misterioso y peligroso que esconde secretos y desafíos.</p>
         </div>
-      </div>
-
-      <div class="lugar">
-        <div>
-          <h3>Campo de Hyrule</h3>
-          <p>Extensos campos abiertos que conectan las distintas regiones del mundo. Lugar de encuentros y batallas.</p>
+        <div class="card">
+          <img src="images/DeathMountain.png" alt="Montaña de la Muerte" />
+          <h3>Montaña de la Muerte</h3>
+          <p class="card-desc">Una montaña volcánica con múltiples desafíos y la entrada al Templo del Fuego.</p>
         </div>
-        <img src="images/campo_hyrule.jpg" alt="Campo de Hyrule" class="derecha" />
+        <div class="card">
+          <img src="images/GerudoValleyMap.png" alt="Valle Gerudo" />
+          <h3>Valle Gerudo</h3>
+          <p class="card-desc">Territorio desértico hogar de las guerreras Gerudo.</p>
+        </div>
       </div>
     </section>
 
-    <section id="galeria" class="section-fade gallery">
-      <h2>Galería Épica</h2>
-      <div class="image-grid">
-        <img src="images/link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
-        <img src="images/link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
-        <img src="images/link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
+    <section id="mazmorras" class="section">
+      <h2>Mazmorras principales</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/ForestTemple.png" alt="Templo del Bosque" />
+          <h3>Templo del Bosque</h3>
+          <p class="card-desc">Mazmorra inicial donde Link obtiene la Espada Maestra.</p>
+        </div>
+        <div class="card">
+          <img src="images/FireTemple.png" alt="Templo del Fuego" />
+          <h3>Templo del Fuego</h3>
+          <p class="card-desc">Mazmorra ubicada en la Montaña de la Muerte, hogar de Volvagia.</p>
+        </div>
+        <div class="card">
+          <img src="images/WaterTemple.png" alt="Templo del Agua" />
+          <h3>Templo del Agua</h3>
+          <p class="card-desc">Mazmorra subacuática custodiada por Morpha.</p>
+        </div>
+        <div class="card">
+          <img src="images/ShadowTemple.png" alt="Templo de las Sombras" />
+          <h3>Templo de las Sombras</h3>
+          <p class="card-desc">Templo oscuro y complejo custodiado por Bongo Bongo.</p>
+        </div>
+        <div class="card">
+          <img src="images/SpiritTemple.png" alt="Templo del Espíritu" />
+          <h3>Templo del Espíritu</h3>
+          <p class="card-desc">Mazmorra con puzles y enemigos, hogar de Twinrova.</p>
+        </div>
       </div>
     </section>
 
-    <section id="musica" class="section-fade">
-      <h2>Música del Juego</h2>
-      <audio controls preload="auto">
-        <source src="audio/zelda-title-theme.mp3" type="audio/mpeg" />
-        Tu navegador no soporta audio.
-      </audio>
-      <audio controls preload="auto" style="margin-top: 20px;">
-        <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
-        Tu navegador no soporta audio.
-      </audio>
+    <section id="galeria" class="section">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/HyruleGame.jpg" alt="Hyrule" />
+          <figcaption>Hyrule en el juego</figcaption>
+        </figure>
+        <figure>
+          <img src="images/LinkHero.png" alt="Link" />
+          <figcaption>Link, el héroe</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Zelda.png" alt="Zelda" />
+          <figcaption>Princesa Zelda</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Ganondorf.png" alt="Ganondorf" />
+          <figcaption>Ganondorf, villano principal</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section id="enlaces" class="enlaces fade-in">
-      <h2>Más sobre Zelda</h2>
-      <ul>
-        <li><a href="https://zelda.nintendo.com/" target="_blank" rel="noopener">Sitio oficial de Zelda</a></li>
-        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank" rel="noopener">Zelda Wiki - Ocarina of Time</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank" rel="noopener">Wikipedia</a></li>
+    <section id="musica" class="section">
+      <h2>Música</h2>
+      <p>Selecciona una pista y controla la reproducción:</p>
+      <div id="music-player">
+        <select id="track-select" aria-label="Seleccionar pista musical">
+          <option value="audio/TitleTheme.mp3">Título principal</option>
+          <option value="audio/ZeldasLullaby.mp3">Zelda's Lullaby</option>
+          <option value="audio/LostWoods.mp3">Lost Woods</option>
+          <option value="audio/GerudoValley.mp3">Gerudo Valley</option>
+        </select>
+        <button id="play-pause" aria-label="Reproducir/Pausar música">▶️</button>
+        <button id="stop" aria-label="Detener música">⏹️</button>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <h2>Video destacado</h2>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/WVZPc4TCuWU" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="enlaces" class="section">
+      <h2>Enlaces oficiales</h2>
+      <ul class="official-links">
+        <li><a href="https://zelda.nintendo.com/" target="_blank" rel="noopener noreferrer">Sitio oficial de Zelda</a></li>
+        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank" rel="noopener noreferrer">Zelda Wiki - Ocarina of Time</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank" rel="noopener noreferrer">Wikipedia - Ocarina of Time</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>Creado por Aurora A. Siguenza Morales - Proyecto Zelda Ocarina of Time</p>
+    <p>© 2025 The Legend of Zelda Creado por Aurora Siguenza.</p>
   </footer>
 
   <script src="script.js"></script>
