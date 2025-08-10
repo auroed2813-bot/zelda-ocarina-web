@@ -1,71 +1,49 @@
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Legend of Zelda: Ocarina of Time - Universo Completo</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Legend of Zelda: Ocarina of Time</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>The Legend of Zelda: Ocarina of Time</h1>
-    <nav>
-      <ul id="menu">
-        <li><a href="#personajes">Personajes</a></li>
-        <li><a href="#mazmorras">Mazmorras</a></li>
-        <li><a href="#villanos">Villanos</a></li>
-        <li><a href="#lugares">Lugares</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#musica">Música</a></li>
-      </ul>
-    </nav>
+    <p>Explora Hyrule y vive la aventura épica de Link</p>
   </header>
 
   <main>
-    <section id="personajes" class="section-fade">
-      <h2>Personajes Principales</h2>
-      <p>Link, Zelda, Ganondorf y muchos más héroes y aliados.</p>
-      <img src="images/link_zelda_ganon_wallpaper.jpg" alt="Link, Zelda y Ganondorf" />
-    </section>
-
-    <section id="mazmorras" class="section-fade">
-      <h2>Mazmorras</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="images/deku_tree.jpg" alt="Gran Árbol Deku" />
-          <h3>Gran Árbol Deku</h3>
-          <p>La primera mazmorra del juego, hogar de criaturas venenosas y trampas clásicas.</p>
-        </article>
-        <article class="card">
-          <img src="images/forest_temple.jpg" alt="Templo del Bosque" />
-          <h3>Templo del Bosque</h3>
-          <p>Un templo místico con acertijos de luz y sombra, custodiado por espíritus del bosque.</p>
-        </article>
-        <article class="card">
-          <img src="images/fire_temple.jpg" alt="Templo del Fuego" />
-          <h3>Templo del Fuego</h3>
-          <p>Una mazmorra infernal llena de lava y enemigos ardientes.</p>
-        </article>
-      </div>
-    </section>
-
     <section id="villanos" class="section-fade">
-      <h2>Villanos</h2>
-      <div class="cards">
+      <h2>Villanos y Enemigos</h2>
+      <div class="villanos-grid">
         <article class="card">
-          <img src="images/ganondorf.jpg" alt="Ganondorf" />
+          <img src="ganondorf.jpg" alt="Ganondorf" />
           <h3>Ganondorf</h3>
-          <p>El Rey de los Ladrones de Gerudo, principal antagonista que busca conquistar Hyrule.</p>
+          <p>El principal antagonista que busca controlar Hyrule.</p>
         </article>
         <article class="card">
-          <img src="images/wizzrobe.jpg" alt="Wizzrobe" />
-          <h3>Wizzrobe</h3>
-          <p>Mago oscuro que lanza rayos mágicos, enemigo recurrente en mazmorras.</p>
+          <img src="dark_link.jpg" alt="Dark Link" />
+          <h3>Dark Link</h3>
+          <p>El reflejo oscuro de Link, una sombra peligrosa.</p>
         </article>
         <article class="card">
-          <img src="images/twinrova.jpg" alt="Twinrova" />
+          <img src="phantom_ganon.jpg" alt="Phantom Ganon" />
+          <h3>Phantom Ganon</h3>
+          <p>Un guerrero fantasmal que acecha en el Palacio de la Princesa.</p>
+        </article>
+        <article class="card">
+          <img src="volvagia.jpg" alt="Volvagia" />
+          <h3>Volvagia</h3>
+          <p>Un dragón de lava que habita en el Templo del Fuego.</p>
+        </article>
+        <article class="card">
+          <img src="bongo_bongo.jpg" alt="Bongo Bongo" />
+          <h3>Bongo Bongo</h3>
+          <p>El jefe del Templo Shadow, una bestia con manos espectrales.</p>
+        </article>
+        <article class="card">
+          <img src="twinrova.jpg" alt="Twinrova" />
           <h3>Twinrova</h3>
-          <p>Hermana gemelas fusionadas que usan fuego y hielo para atacar.</p>
+          <p>Hermanas gemelas fusionadas que usan fuego y hielo para atacar.</p>
         </article>
       </div>
     </section>
@@ -74,7 +52,7 @@
       <h2>Lugares Icónicos</h2>
 
       <div class="lugar">
-        <img src="images/castillo_hyrule.jpg" alt="Castillo de Hyrule" class="izquierda" />
+        <img src="castillo_hyrule.jpg" alt="Castillo de Hyrule" class="izquierda" />
         <div>
           <h3>Castillo de Hyrule</h3>
           <p>El centro del reino donde reside la princesa Zelda. Un lugar de gran importancia política y espiritual.</p>
@@ -86,11 +64,11 @@
           <h3>Lago Hylia</h3>
           <p>Un lago sereno al suroeste de Hyrule, hogar del laboratorio de investigación y del Templo del Agua.</p>
         </div>
-        <img src="images/lago_hylia.jpg" alt="Lago Hylia" class="derecha" />
+        <img src="lago_hylia.jpg" alt="Lago Hylia" class="derecha" />
       </div>
 
       <div class="lugar">
-        <img src="images/bosque_kokiri.jpg" alt="Bosque Kokiri" class="izquierda" />
+        <img src="bosque_kokiri.jpg" alt="Bosque Kokiri" class="izquierda" />
         <div>
           <h3>Bosque Kokiri</h3>
           <p>El hogar de la infancia de Link. Un lugar lleno de magia y misterio protegido por el Gran Árbol Deku.</p>
@@ -102,37 +80,43 @@
           <h3>Campo de Hyrule</h3>
           <p>Extensos campos abiertos que conectan las distintas regiones del mundo. Lugar de encuentros y batallas.</p>
         </div>
-        <img src="images/campo_hyrule.jpg" alt="Campo de Hyrule" class="derecha" />
+        <img src="campo_hyrule.jpg" alt="Campo de Hyrule" class="derecha" />
       </div>
     </section>
 
     <section id="galeria" class="section-fade gallery">
       <h2>Galería Épica</h2>
       <div class="image-grid">
-        <img src="images/link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
-        <img src="images/link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
-        <img src="images/link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
-      </div>
-    </section>
-
-    <section id="video" class="section-fade">
-      <h2>Video de Juego</h2>
-      <div class="video-container">
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/F9ohCKS_LUM" title="Video The Legend of Zelda Ocarina of Time" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="link_vs_ganondorf1.jpg" alt="Link vs Ganondorf Épico 1" />
+        <img src="link_vs_ganondorf2.jpg" alt="Link vs Ganondorf Épico 2" />
+        <img src="link_zelda_ganon_fanart.jpg" alt="Fanart Link Zelda Ganon" />
       </div>
     </section>
 
     <section id="musica" class="section-fade">
       <h2>Música del Juego</h2>
       <audio controls preload="auto">
-        <source src="audio/audio.mp3" type="audio/mpeg" />
+        <source src="audio/ocarina_theme.mp3" type="audio/mpeg" />
         Tu navegador no soporta audio.
       </audio>
+      <audio controls preload="auto" style="margin-top: 20px;">
+        <source src="https://vgmsite.com/soundtracks/legend-of-zelda-ocarina-of-time/juxfysqb/101%20-%20Title%20Theme.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio.
+      </audio>
+    </section>
+
+    <section id="enlaces" class="enlaces fade-in">
+      <h2>Más sobre Zelda</h2>
+      <ul>
+        <li><a href="https://zelda.nintendo.com/" target="_blank" rel="noopener">Sitio oficial de Zelda</a></li>
+        <li><a href="https://zeldawiki.wiki/wiki/Ocarina_of_Time" target="_blank" rel="noopener">Zelda Wiki - Ocarina of Time</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank" rel="noopener">Wikipedia</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>Creado por Aurora A.siguenza Morales - Proyecto Zelda Ocarina of Time</p>
+    <p>Creado por Aurora A. Siguenza Morales - Proyecto Zelda Ocarina of Time</p>
   </footer>
 
   <script src="script.js"></script>
